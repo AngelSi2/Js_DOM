@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script class="prueba">
+        // saludar();
+        function saludar() {
+            var nombre = "Juan"
+            // let crea una variable que dura menos tiempo en memoria
+            let apellido = "Soto"
+            // Las constantes, como dice su nombre, no pueden alterar su valor
+            const edad = 20
+            alert("Hola "+ nombre + apellido )
+            if (edad >= 18) {
+                // Nos permite imprimir un valor en la consola del navegador
+                // esto no es visible para el usuario normal
+                console.log("Es mayor de edad")
+            } else{
+                console.log("Es menor de edad")
+            }
+        }
+        
+        function segun(){
+            num1 = 10;
+            num2 = 2;
+            total = 0;
+            operacion = "Resta";
+            switch (operacion){
+                case "suma":
+                    total = num1 + num2;
+                    break;
+                case "Resta":
+                    total = num1 - num2;
+                    break;
+                default:
+                    total = "no existe";
+                    break;
+            }
+
+            alert(`Resultado: ${total}`)
+            /*if (operacion == "suma"){
+                total = num1 + num2
+            } else if (operacion == "Resta"){
+                total = num1 - num2
+            }*/
+        } 
+
+        function Ciclofor(){
+            // Este for es super arcaico.. necesita 3 valores que van por serpara
+        }
+        
+
+
+        
+    </script>
+    
+</head>
+<body>
+    <!-- onclick se utiliza para llamar una función javascript a travez de un boton en css -->
+    <button onclick="segun()">si</button>
+</body>
+</html>
